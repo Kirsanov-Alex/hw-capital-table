@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+p {
+    font-size: 1rem;
+    text-indent: 5em;
+}
+.article{
+ font-size: 20px; 
+}
+.highlight{
+    color: red;
+}
+#bio{
+    font-weight: bold;
+}
+#philanthropy{
+    font-style: italic;
+}
+#discography{
+    text-decoration: underline;
+}
+#philanthropy{
+    text-decoration: underline;
+}
+#band{
+    text-decoration: underline;
+}
+#musical{
+    text-decoration: underline;
+}
