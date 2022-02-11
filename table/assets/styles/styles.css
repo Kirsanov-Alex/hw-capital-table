@@ -1,4 +1,11 @@
-@import "./reset.css";
+/* @import "./reset.css"; */
+:root{
+    font-size: 30px;
+    color: blue;
+    --main-bgc: teal;
+    --main-width: 400px;
+    --el-number: 5;
+}
 *{
     box-sizing: border-box;
 }
@@ -7,62 +14,38 @@ body {
     min-height: 300vh;
 }
 
-.wraper{
-    background-color: green;
-    width : 80%;
-    height : 400px;
-    margin: 20px auto;
-    position: relative;
-    padding: 30px;
+table, tr, th, td {
+    border-collapse:separate;
+    border: 1px solid black;
+    margin: 0px auto;
+    margin-top: 30px;
+    font-size: 20px;
 }
-.inner-wraper{
-    background-color: coral;
-    width : 80%;
-    height : 80%;
-    margin: 0 auto;
-    /* position: relative; */
-    /* z-index: 100; */
+table {
+    width: calc(100%/var(--el-number));
+    display: inline-block;
 }
-.item1, .item2, .item3, .item4{
-    border: 2px solid black;
+td{
     text-align: center;
-    font-size: 2em;
-    position: absolute;
 }
-.item1{
-    background-color: forestgreen;
-    top: 0;
-    left: 0;
-    min-width: 100px;
-    height: 150px;
-    z-index: 1;
-
+caption {
+    font-size: 30px;
 }
-.item2{
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    bottom: 0;
-    right: 0;
-    position: fixed;
+caption:hover{
+    background-color: red;
 }
-.item3{
-    width: 100px;
-    height: 100px;
-    background-color: burlywood;
-    top: 0;
-    right: 0;
+th:first-child{
+    font-size: 50px;
 }
-.item4{
-    width: 100px;
-    height: 100px;
-    background-color: crimson;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    /* position: sticky; */
-    top: 2px;
-    left: 0;
-    margin-top: 10px;
-    z-index: 2;
+tbody>tr:nth-child(even){
+    background-color: bisque;
+}
+.first::before{
+  content: "@";
+}
+.first::after{
+    content: "!";
+}
+thead{
+    background-color: var(--main-bgc)
 }
