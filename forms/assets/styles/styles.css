@@ -1,0 +1,28 @@
+/* @import "./reset.css"; */
+:root{
+    font-size: 30px;
+    color: blue;
+    --main-bgc: teal;
+    --main-width: 400px;
+    --el-number: 5;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 300vh;
+}
+.container{
+    border: 10px solid #000;
+    min-height: 400px;
+}
+input:focus{
+/* background-color: green; */
+}
+ul{
+    decoration: none;
+}
+fieldset{
+    weight: 300px;
+}
